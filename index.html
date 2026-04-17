@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Najam Haider | AI/ML Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Cursor Follower -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Animated Background Grid -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb orb1" aria-hidden="true"></div>
+  <div class="bg-orb orb2" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>NH<span class="logo-bracket">/&gt;</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link" data-label="01">Home</a></li>
+      <li><a href="#about" class="nav-link" data-label="02">About</a></li>
+      <li><a href="#skills" class="nav-link" data-label="03">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-label="04">Projects</a></li>
+      <li><a href="#contact" class="nav-link" data-label="05">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-tag reveal-up delay-1">
+        <span class="dot"></span> Available for Opportunities
+      </div>
+      <h1 class="hero-name reveal-up delay-2">
+        <span class="line1">Najam</span>
+        <span class="line2">Haider</span>
+      </h1>
+      <div class="hero-role reveal-up delay-3">
+        <span class="role-static">Specializing in </span>
+        <span class="role-dynamic" id="roleText"></span>
+        <span class="cursor-blink">_</span>
+      </div>
+      <p class="hero-desc reveal-up delay-4">
+        AI/ML Engineer · Problem Solver · Code Craftsman<br/>
+        MRIIRS, Sector 42, Faridabad
+      </p>
+      <div class="hero-cta reveal-up delay-5">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right delay-3">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="file-name">najam.py</span>
+        </div>
+        <pre class="code-block"><code><span class="kw">class</span> <span class="cl">NajamHaider</span>:
+  <span class="kw">def</span> <span class="fn">__init__</span>(self):
+    self.name    = <span class="str">"Najam Haider"</span>
+    self.degree  = <span class="str">"AI &amp; ML"</span>
+    self.college = <span class="str">"MRIIRS"</span>
+    self.skills  = [
+      <span class="str">"Python"</span>, <span class="str">"Machine Learning"</span>,
+      <span class="str">"Deep Learning"</span>, <span class="str">"Git"</span>,
+      <span class="str">"Problem Solving"</span>
+    ]
+    self.status  = <span class="str">"Building the future"</span>
+
+  <span class="kw">def</span> <span class="fn">solve</span>(self, problem):
+    <span class="kw">return</span> self.skills + <span class="str">" ∞"</span></code></pre>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="section-label">02 // About</div>
+    <div class="about-grid">
+      <div class="about-text reveal-left">
+        <h2 class="section-title">Who I Am</h2>
+        <p>
+          I'm a passionate AI/ML student at <strong>MRIIRS, Faridabad</strong>, building intelligent systems 
+          that solve real-world problems. My journey began with curiosity about how machines learn — 
+          now I craft models, write clean code, and ship meaningful products.
+        </p>
+        <p>
+          With a strong foundation in algorithms and a love for clean, version-controlled code, 
+          I approach every challenge systematically — breaking it down, reasoning through solutions, 
+          and executing with precision.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">AI/ML</span>
+            <span class="stat-label">Specialization</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">Git</span>
+            <span class="stat-label">Version Control</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Problem Solver</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-card-wrap reveal-right">
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="ac-row"><span class="ac-label">Institution</span><span class="ac-val">MRIIRS</span></div>
+            <div class="ac-row"><span class="ac-label">Location</span><span class="ac-val">Sector 42, Faridabad</span></div>
+            <div class="ac-row"><span class="ac-label">Focus</span><span class="ac-val">Artificial Intelligence &amp; ML</span></div>
+            <div class="ac-row"><span class="ac-label">Email</span><span class="ac-val">najamhaider@email.com</span></div>
+            <div class="ac-row"><span class="ac-label">Phone</span><span class="ac-val">+91 85956 59298</span></div>
+            <div class="ac-row"><span class="ac-label">Status</span><span class="ac-val status-open"><span class="dot pulse"></span>Open to Work</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="section-label">03 // Skills</div>
+    <h2 class="section-title reveal-up">Technical Arsenal</h2>
+    <div class="skills-grid">
+
+      <div class="skill-category reveal-up delay-1">
+        <div class="skill-cat-header">
+          <span class="skill-icon">🧠</span>
+          <h3>AI / Machine Learning</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Python</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Neural Networks</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-up delay-2">
+        <div class="skill-cat-header">
+          <span class="skill-icon">💻</span>
+          <h3>Programming</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">C++</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-up delay-3">
+        <div class="skill-cat-header">
+          <span class="skill-icon">🔧</span>
+          <h3>Tools & Version Control</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Jupyter</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Docker</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal-up delay-4">
+        <div class="skill-cat-header">
+          <span class="skill-icon">⚡</span>
+          <h3>Core Strengths</h3>
+        </div>
+        <div class="skill-tags">
+          <span class="tag highlight">Problem Solving</span>
+          <span class="tag highlight">Analytical Thinking</span>
+          <span class="tag highlight">Algorithm Design</span>
+          <span class="tag highlight">Clean Code</span>
+          <span class="tag highlight">Team Collaboration</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Animated Skill Bars -->
+    <div class="skill-bars reveal-up">
+      <h3 class="bars-title">Proficiency</h3>
+      <div class="bar-item">
+        <div class="bar-label"><span>Python</span><span>90%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label"><span>Machine Learning</span><span>85%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label"><span>Problem Solving</span><span>95%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="95"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label"><span>Git / Version Control</span><span>88%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label"><span>JavaScript / Web</span><span>75%</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="section-label">04 // Projects</div>
+    <h2 class="section-title reveal-up">Selected Work</h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal-up delay-1">
+        <div class="project-header">
+          <span class="project-num">01</span>
+          <div class="project-links">
+            <a href="#" class="proj-link" aria-label="GitHub">⌥ Code</a>
+            <a href="#" class="proj-link" aria-label="Live">↗ Live</a>
+          </div>
+        </div>
+        <h3 class="project-title">Sentiment Analysis Engine</h3>
+        <p class="project-desc">NLP model that classifies social media sentiment with 93% accuracy using LSTM networks and custom preprocessing pipelines.</p>
+        <div class="project-tech">
+          <span>Python</span><span>TensorFlow</span><span>NLP</span><span>LSTM</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-2">
+        <div class="project-header">
+          <span class="project-num">02</span>
+          <div class="project-links">
+            <a href="#" class="proj-link">⌥ Code</a>
+            <a href="#" class="proj-link">↗ Live</a>
+          </div>
+        </div>
+        <h3 class="project-title">Image Classifier (CNN)</h3>
+        <p class="project-desc">Deep convolutional neural network for multi-class image recognition, trained on custom datasets with data augmentation techniques.</p>
+        <div class="project-tech">
+          <span>Python</span><span>Keras</span><span>OpenCV</span><span>CNN</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-3">
+        <div class="project-header">
+          <span class="project-num">03</span>
+          <div class="project-links">
+            <a href="#" class="proj-link">⌥ Code</a>
+            <a href="#" class="proj-link">↗ Live</a>
+          </div>
+        </div>
+        <h3 class="project-title">Predictive Analytics Dashboard</h3>
+        <p class="project-desc">End-to-end ML pipeline with interactive visualizations for predictive modeling on structured datasets using ensemble methods.</p>
+        <div class="project-tech">
+          <span>Scikit-learn</span><span>Pandas</span><span>Plotly</span><span>Flask</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-4">
+        <div class="project-header">
+          <span class="project-num">04</span>
+          <div class="project-links">
+            <a href="#" class="proj-link">⌥ Code</a>
+            <a href="#" class="proj-link">↗ Live</a>
+          </div>
+        </div>
+        <h3 class="project-title">Smart Todo App</h3>
+        <p class="project-desc">Productivity web app with priority sorting, real-time updates, localStorage persistence, and clean responsive UI built from scratch.</p>
+        <div class="project-tech">
+          <span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Git</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="section-label">05 // Contact</div>
+    <div class="contact-inner">
+      <h2 class="section-title reveal-up">Let's Build Together</h2>
+      <p class="contact-sub reveal-up delay-1">Open to internships, collaborations, and exciting ML projects.</p>
+      <div class="contact-cards reveal-up delay-2">
+        <a href="mailto:najamhaider@email.com" class="contact-card">
+          <span class="cc-icon">✉</span>
+          <span class="cc-label">Email</span>
+          <span class="cc-val">najamhaider@email.com</span>
+        </a>
+        <a href="tel:+918595659298" class="contact-card">
+          <span class="cc-icon">✆</span>
+          <span class="cc-label">Phone</span>
+          <span class="cc-val">+91 85956 59298</span>
+        </a>
+        <a href="https://github.com/" target="_blank" class="contact-card">
+          <span class="cc-icon">⌥</span>
+          <span class="cc-label">GitHub</span>
+          <span class="cc-val">github.com/najamhaider</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Designed &amp; Coded by <strong>Najam Haider</strong> &nbsp;·&nbsp; MRIIRS Faridabad</p>
+    <p class="footer-sub">Built with HTML · CSS · JavaScript &nbsp;·&nbsp; <span class="heart">♥</span> for AI/ML</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
